@@ -1,10 +1,8 @@
 import { defineStore } from 'pinia';
 // project imports
-import axios from '@/utils/axios';
 import { map } from 'lodash';
 import { uniqueId } from 'lodash';
 import { sub } from 'date-fns';
-import type { Ref } from 'vue';
 import {TaskData} from "#/apps/kanban";
 
 

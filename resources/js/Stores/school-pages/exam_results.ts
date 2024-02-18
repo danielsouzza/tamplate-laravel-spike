@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
+import contacts from "#/apps/contact";
 // project imports
-import axios from '@/utils/axios';
 
 export const useResultsStore = defineStore({
     id: 'Results',
@@ -10,10 +10,9 @@ export const useResultsStore = defineStore({
     getters: {},
     actions: {
         // Fetch followers from action
-        async fetchResults() {
+         fetchResults() {
             try {
-                const response = await axios.get('/api/contacts');
-                this.results = response.data.results;
+                this.results = contacts
             } catch (error) {
                 alert(error);
                 console.log(error);

@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
+import contacts from "#/apps/contact";
 // project imports
-import axios from '@/utils/axios';
+
 
 export const useAttendenceStore = defineStore({
     id: 'Attendence',
@@ -12,8 +13,7 @@ export const useAttendenceStore = defineStore({
         // Fetch followers from action
         async fetchAttendence() {
             try {
-                const response = await axios.get('/api/contacts');
-                this.attendence = response.data.attendence;
+                this.attendence = contacts
             } catch (error) {
                 alert(error);
                 console.log(error);

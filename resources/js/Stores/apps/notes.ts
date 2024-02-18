@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia';
 // project imports
-import axios from '@/utils/axios';
 import { map } from 'lodash';
 import {NotesData} from "#/apps/notes";
 

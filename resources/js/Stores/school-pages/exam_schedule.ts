@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia';
 // project imports
-import axios from '@/utils/axios';
 import {schedule} from "#/components/school-pages/exam_schedule";
 
 export const useScheduleStore = defineStore({

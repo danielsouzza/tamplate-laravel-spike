@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia';
 // project imports
-import axios from '@/utils/axios';
 import type { ClassesType } from '@/Types/components/school-pages/classes';
 import {ClassesTypeData} from "#/components/school-pages/ClassesData";
 

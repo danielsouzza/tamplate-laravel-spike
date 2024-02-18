@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia';
 // project imports
-import axios from '@/utils/axios';
 // types
 import type { ProductStateProps } from '@/Types/apps/EcommerceType';
 import { filter, map, sum } from 'lodash';
